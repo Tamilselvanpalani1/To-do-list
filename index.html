@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <!-- Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>TO - DO LIST &nbsp;<i class="fa-solid fa-clipboard-list fa-lg" style="color: #fa2500;"></i></h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="text" placeholder="Add your task"></th>
+                    <th><button onclick="add()" id="addBtn">ADD</button></th>
+                </tr>
+            </thead>
+        </table>
+        <!-- ListItem -->
+        <ul id="listContainer">
+            <!-- <li>Hello&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="Delete(event)"><i class="fa-solid fa-xmark"></i></button></li> -->
+        </ul>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
